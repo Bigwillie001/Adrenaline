@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ADLN</title>
 
 <link rel="stylesheet" href="style.css">
@@ -27,44 +28,50 @@ Adrenaline is the currency of the fearless. Built for those who move fast, think
 <b>$ADLN</b> isn't just a token, it's a rush.
 </p>
 
-<!-- CONTRACT ADDRESS -->
+<!-- CONTRACT -->
 <div class="contract-box">
-<span id="contract">atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump</span>
+
+<span id="contract">
+atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump
+</span>
+
 <button onclick="copyCA()">COPY CA</button>
+
 </div>
 
 <!-- BUY BUTTONS -->
 <div class="buy-buttons">
 
-<a href="https://jup.ag/swap/SOL-atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump"
+<a
+href="https://jup.ag/swap/SOL-atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump"
 target="_blank"
-class="buy-btn">
+class="buy-btn"
+>
 💰 BUY ON JUPITER
 </a>
 
-<a href="https://dexscreener.com/solana/atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump"
+<a
+href="https://dexscreener.com/solana/atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump"
 target="_blank"
-class="dex-btn">
+class="dex-btn"
+>
 📊 VIEW ON DEXSCREENER
 </a>
 
 </div>
 
-<!-- LIVE PRICE PANEL (NO CHART) -->
-<div class="chart-section">
+<!-- LIVE PRICE ONLY -->
+<div class="price-box">
 
-<iframe
-src="https://dexscreener.com/solana/atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump?embed=1&theme=dark&chart=0"
-width="100%"
-height="230"
-style="border:none;border-radius:14px;">
-</iframe>
+<span>LIVE PRICE</span>
+
+<h2 id="price">$0.000000</h2>
 
 </div>
 
 </div>
 
-<!-- COPY SUCCESS TOAST -->
+<!-- COPY SUCCESS MESSAGE -->
 <div id="copy-toast">Contract Address Copied</div>
 
 <script src="script.js"></script>
