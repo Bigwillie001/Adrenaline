@@ -1,0 +1,139 @@
+body {
+  margin:0;
+  padding:0;
+  background:#000;
+  font-family:'Space Mono', monospace;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  text-align:center;
+}
+
+.container {
+  max-width:500px;
+  padding:30px;
+}
+
+.logo {
+width:160px;
+height:160px;
+object-fit:cover;
+border-radius:50%;
+box-shadow:0 0 10px #00ff7f,0 0 18px rgba(0,255,127,0.6);
+margin-bottom:20px;
+}
+
+.title {
+  font-size:52px;
+  margin:10px 0;
+  background:linear-gradient(90deg,#00ff7f,#ffffff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.description {
+  color:#aaa;
+  font-size:15px;
+  line-height:1.6;
+  margin-bottom:30px;
+}
+
+.contract-box {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:2px solid #00ff7f;
+  border-radius:14px;
+  padding:12px;
+  margin-bottom:20px;
+  background:rgba(0,255,120,0.05);
+}
+
+.contract-box span {
+  font-size:13px;
+  color:#00ff7f;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.contract-box button {
+background:#00ff7f;
+border:none;
+padding:6px 12px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+font-size:12px;
+}
+
+.buy-buttons {
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-bottom:30px;
+}
+
+.buy-btn, .dex-btn {
+display:inline-block;
+background:#00ff7f;
+color:black;
+padding:14px 32px;
+border-radius:26px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,255,127,0.5);
+transition:0.3s;
+font-size:15px;
+}
+
+.buy-btn:hover, .dex-btn:hover {
+transform:translateY(-2px);
+box-shadow:0 0 14px rgba(0,255,127,0.6);
+}
+
+.chart-section{
+margin-top:40px;
+border:1px solid #222;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 0 20px rgba(0,255,127,0.15);
+}
+#copy-toast{
+position:fixed;
+bottom:30px;
+left:50%;
+transform:translateX(-50%);
+background:#00ff7f;
+color:black;
+padding:12px 24px;
+border-radius:30px;
+font-weight:bold;
+box-shadow:0 0 20px #00ff7f;
+opacity:0;
+pointer-events:none;
+transition:0.4s;
+}
+
+#copy-toast.show{
+opacity:1;
+bottom:50px;
+}
+
+@media (max-width:500px){
+
+.title{
+font-size:42px;
+}
+
+.contract-box{
+flex-direction:column;
+gap:10px;
+}
+
+.contract-box button{
+width:100%;
+}
+
+}
